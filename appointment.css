@@ -1,0 +1,518 @@
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@1,300;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body {
+      overflow-x: hidden;
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      background: #fff;
+      font-size: 14px;
+      color: #555555;
+      line-height: 1.7;
+      font-weight: 400;
+  }
+
+  * {
+      transition: all 0.3s ease;
+  }
+
+  /*top-bar start*/
+  .top-bar {
+      background-color: #011a48;
+      height: 57px;
+      display: flex;
+      align-items: center;
+  }
+
+  .header-top-left a {
+      font-size: 15px;
+      color: white;
+      text-decoration: none;
+      padding-left: 15px;
+  }
+
+  .header-top-left a:hover,
+  .header-social-link a i:hover {
+      color: #F7941D;
+      transition: 0.5s ease all;
+  }
+
+  .header-top-left i {
+      color: white;
+  }
+
+  .header-social-link a i {
+      color: white;
+      margin-left: 22px;
+  }
+
+  /*top-bar end*/
+  /*navbar start*/
+  .nav-wrap {
+      top: 0;
+      left: 0;
+      position: sticky;
+      width: 100%;
+      z-index: 9;
+      background-color: #fff;
+      height: 80px;
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+      animation: slideDown 0.3s ease;
+  }
+
+  .nav-item {
+      margin-left: 22px;
+  }
+
+  .navbar-collapse ul li a {
+      color: #222222;
+      font-size: 13px;
+      font-weight: 500;
+      display: block;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  .navbar-collapse ul li a i {
+      font-size: 15px;
+      padding-left: 5px;
+  }
+
+  .no-caret::after {
+      display: none !important;
+  }
+
+  .nav-item .active {
+      color: #F7941D !important;
+  }
+
+  .dropdown-menu {
+      border: none !important;
+  }
+
+  /*navbar end*/
+  /*breadcrum start*/
+  .coords {
+      background-color: #011a48;
+      padding: 95px 0 100px;
+      text-align: center;
+  }
+
+  .coords h2 {
+      color: #fff;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 500;
+  }
+
+  .breadcrumb li a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: capitalize;
+      text-decoration: none;
+  }
+
+  /*breadcrum end*/
+  /*appointment-form start*/
+  .service {
+      position: relative;
+  }
+
+  .service select {
+      width: 251px;
+      height: 70px;
+      border: none;
+      outline: none;
+      appearance: none;
+      padding: 0 30px 0 12px;
+      cursor: pointer;
+  }
+
+  .service::after {
+      content: "V";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+  }
+
+  .customer-appoint-box {
+      width: fit-content;
+  }
+
+  .customer-appoint-box>div {
+      border-right: 1px solid #e5e5e5;
+  }
+
+  .customer-appoint-box>div:last-child {
+      border-right: none;
+  }
+
+
+  .appoint-form-inner {
+      margin: 0;
+  }
+
+  .customer-appoint-box {
+      margin: 0;
+      gap: 0 !important;
+  }
+
+
+  .customer-appoint-box input,
+  .customer-appoint-box .dropdown {
+      margin: 0;
+  }
+
+  .dropdown .dropdown-toggle::after {
+      display: none;
+  }
+
+  .dropdown i {
+      padding-left: 90px;
+  }
+
+  .dropdown .btn,
+  .dropdown .btn:focus,
+  .dropdown .btn:active,
+  .dropdown .btn.show {
+      border: 0;
+      box-shadow: none;
+      outline: none;
+  }
+
+  .appoint-form-wrapper {
+      border-radius: 5px;
+      padding: 60px;
+  }
+
+  .customer-appoint {
+      background-color: #fff;
+      max-width: 840px;
+      width: 100%;
+  }
+
+  .bg-img {
+      background: url("image/form.webp") no-repeat center / cover;
+      width: 1170px;
+      height: 290px;
+      margin: 0 auto;
+      border-radius: 5px;
+  }
+
+  .appoint-form-wrapper h3 {
+      color: white;
+      padding-bottom: 20px;
+  }
+
+  .customer-name input {
+      width: 168px;
+      height: 100%;
+      padding: 5px 10px;
+      border: none;
+  }
+
+  .customer-phone input {
+      width: 168px;
+      height: 100%;
+      padding: 5px 10px;
+      border: none;
+  }
+
+  .customer-email input {
+      width: 251px;
+      height: 100%;
+      padding: 5px 10px;
+      border: none;
+  }
+
+  .customer-appoint .bdr-right {
+      border-right: 1px solid #e5e5e5;
+  }
+
+  .customer-appoint {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  input:focus,
+  select:focus {
+      outline: none;
+      box-shadow: none;
+  }
+
+  .form-image form {
+      display: flex;
+      align-items: center;
+  }
+
+  .appoint-btn {
+      padding-left: 25px;
+  }
+
+  .btn-app {
+      height: 70px;
+      background-color: #F7941D;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      padding: 0 45px;
+      border-radius: 0;
+  }
+
+  .btn-app:hover {
+      background-color: #222222;
+      color: #fff;
+  }
+
+  .section-padding {
+      padding: 110px 0;
+  }
+
+  /*appointment end*/
+  /*about us start*/
+  .section-padding {
+      padding: 110px 0;
+  }
+
+  .section-title .title {
+      font-size: 48px;
+      position: relative;
+  }
+
+  .section-title .sub-title {
+      padding-top: 36px;
+      margin: 0 auto;
+      max-width: 55%;
+  }
+
+  .about1-info h6 {
+      color: #F7941D;
+      margin-bottom: 18px;
+  }
+
+  .about1-info p {
+      color: #555555;
+      font-weight: 500;
+      margin-bottom: 0;
+  }
+
+  /*about us end*/
+  /*footer start*/
+  .footer-widget {
+      background-color: #f3f5f6;
+      width: 100%;
+      max-width: 100%;
+      height: 409px;
+      background-color: #f3f5f6;
+  }
+
+  .footer-single-widget h5 {
+      font-size: 14px;
+      color: #222222;
+  }
+
+  .widget-body ul li {
+      list-style-type: none;
+  }
+
+  .widget-body ul li a {
+      font-size: 14px;
+      color: #222222;
+      text-decoration: none;
+  }
+
+  .widget-social-link a {
+      padding-top: 20px;
+      color: #222222;
+      font-size: 16px;
+      display: inline-block;
+      line-height: 1;
+      text-align: center;
+      margin-right: 15px;
+  }
+
+  .widget-search-form {
+      position: relative;
+  }
+
+  .newsletter-inner .news-field {
+      width: 100%;
+      height: 44px;
+      border: none;
+      line-height: 1;
+      color: #222222;
+      background-color: #e5e5e5;
+      position: relative;
+      padding: 5px 55px 5px 10px;
+  }
+
+  .newsletter-inner .news-btn:hover {
+      background-color: #222222;
+  }
+
+  .newsletter-inner .news-btn {
+      font-size: 18px;
+      height: 44px;
+      color: #fff;
+      line-height: 1;
+      font-weight: 400;
+      padding: 0 15px;
+      display: inline-block;
+      background-color: #F7941D;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .footer-bottom {
+      background-color: #dadada;
+      padding: 14px 0;
+  }
+
+  .copyright-text a {
+      text-decoration: none;
+      color: #F7941D;
+  }
+
+  /*footer end*/
+  @media (max-width: 576px) {
+      .navbar-collapse {
+          background-color: rgb(238, 238, 238);
+      }
+
+      .form-image {
+          width: 360px;
+          height: 601px;
+      }
+
+      .appointment-form {
+          padding: 63px 0;
+      }
+
+      .bg-img {
+          width: 360px;
+          height: 601px;
+      }
+
+      .appoint-form-wrapper {
+          padding: 60px 15px;
+      }
+
+      .customer-appoint-box>div {
+          border-right: none;
+      }
+
+      .customer-name input {
+          width: 330px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .customer-phone input {
+          width: 330px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .customer-email input {
+          width: 330px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .service select {
+          width: 330px;
+          margin-bottom: 20px;
+      }
+
+      .appoint-form-inner .appoint-btn .btn-app {
+          display: block;
+          width: 100%;
+      }
+
+      .appoint-btn {
+          padding-left: 0;
+      }
+
+      .section-title .title {
+          font-size: 24px;
+      }
+
+      .footer-widget {
+          height: 750px;
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+      .navbar-collapse {
+          background-color: rgb(238, 238, 238);
+      }
+
+      .bg-img {
+          width: 690px;
+          height: 603px;
+      }
+
+      .appoint-form-wrapper {
+          padding: 60px 15px;
+      }
+
+      .customer-appoint-box>div {
+          border-right: none;
+      }
+
+      .customer-name input {
+          width: 569px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .customer-phone input {
+          width: 569px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .customer-email input {
+          width: 569px;
+          height: 70px;
+          margin-bottom: 20px;
+      }
+
+      .service select {
+          width: 569px;
+          margin-bottom: 20px;
+      }
+
+      .section-title .title {
+          font-size: 24px;
+      }
+
+      .appoint-form-wrapper {
+          border-radius: 5px;
+          padding: 60px;
+      }
+
+      .customer-appoint-box {
+          width: fit-content;
+      }
+
+      .appoint-form-inner .appoint-btn .btn-app {
+          display: block;
+          width: 100%;
+      }
+
+      .appoint-btn {
+          padding-left: 0;
+      }
+
+      .footer-widget {
+          height: 450px;
+      }
+  }

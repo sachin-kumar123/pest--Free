@@ -1,0 +1,826 @@
+   @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@1,300;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+   body {
+       overflow-x: hidden;
+       font-family: "Montserrat", sans-serif;
+       position: relative;
+       background: #fff;
+       font-size: 14px;
+       color: #555555;
+       line-height: 1.7;
+       font-weight: 400;
+   }
+
+   * {
+       transition: all 0.3s ease;
+   }
+
+   /*top-bar start*/
+   .top-bar {
+       background-color: #011a48;
+       height: 57px;
+       display: flex;
+       align-items: center;
+   }
+
+   .header-top-left a {
+       font-size: 15px;
+       color: white;
+       text-decoration: none;
+       padding-left: 15px;
+   }
+
+   .header-top-left a:hover,
+   .header-social-link a i:hover {
+       color: #F7941D;
+       transition: 0.5s ease all;
+   }
+
+   .header-top-left i {
+       color: white;
+   }
+
+   .header-social-link a i {
+       color: white;
+       margin-left: 22px;
+   }
+
+   /*top-bar end*/
+   /*navbar start*/
+   .nav-wrap {
+       top: 0;
+       left: 0;
+       position: sticky;
+       width: 100%;
+       z-index: 9;
+       background-color: #fff;
+       height: 80px;
+       box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+       animation: slideDown 0.3s ease;
+   }
+
+   .nav-item {
+       margin-left: 22px;
+   }
+
+   .navbar-collapse ul li a {
+       color: #222222;
+       font-size: 13px;
+       font-weight: 500;
+       display: block;
+       text-transform: uppercase;
+       font-family: "Montserrat", sans-serif;
+   }
+
+   .navbar-collapse ul li a i {
+       font-size: 15px;
+       padding-left: 5px;
+   }
+
+   .no-caret::after {
+       display: none !important;
+   }
+
+   .nav-item .active {
+       color: #F7941D !important;
+   }
+
+   .dropdown-menu {
+       border: none !important;
+   }
+
+   /*navbar end*/
+   /* banner start */
+   .custom-caption {
+       position: absolute;
+       top: 50%;
+       left: 20%;
+       transform: translateY(-50%);
+       text-align: left;
+   }
+
+   /* Initial hidden state (upar) */
+   .carousel-item .hero-slider-content {
+       opacity: 0;
+       transform: translateY(70px);
+       transition: all 1s ease-in-out;
+   }
+
+   /* Jab banner active ho */
+   .carousel-item.active .hero-slider-content {
+       opacity: 1;
+       transform: translateY(0);
+   }
+
+   /* Optional styling */
+   .slide-desc {
+       color: #fff;
+       font-size: 18px;
+   }
+
+   .slide-title {
+       color: #fff;
+       font-size: 50px;
+       font-weight: 700;
+       font-family: "Montserrat", sans-serif;
+   }
+
+   .btn-hero {
+       padding: 15px 30px;
+       margin-top: 30px;
+       background: #F7941D;
+       color: white;
+       border-radius: 0;
+   }
+
+   .btn-hero:hover {
+       background-color: #222222;
+       color: white;
+       transition: 0.5s all;
+   }
+
+   .carousel-custom img {
+       height: 800px;
+   }
+
+   /*banner end*/
+   /*appointment-form start*/
+   .service {
+       position: relative;
+   }
+
+   .service select {
+       width: 251px;
+       height: 70px;
+       border: none;
+       outline: none;
+       appearance: none;
+       padding: 0 30px 0 12px;
+       cursor: pointer;
+   }
+
+   .service::after {
+       content: "V";
+       position: absolute;
+       right: 10px;
+       top: 50%;
+       transform: translateY(-50%);
+       pointer-events: none;
+   }
+
+   .customer-appoint-box {
+       width: fit-content;
+   }
+
+   .customer-appoint-box>div {
+       border-right: 1px solid #e5e5e5;
+   }
+
+   .customer-appoint-box>div:last-child {
+       border-right: none;
+   }
+
+
+   .appoint-form-inner {
+       margin: 0;
+   }
+
+   .customer-appoint-box {
+       margin: 0;
+       gap: 0 !important;
+   }
+
+
+   .customer-appoint-box input,
+   .customer-appoint-box .dropdown {
+       margin: 0;
+   }
+
+   .dropdown .dropdown-toggle::after {
+       display: none;
+   }
+
+   .dropdown i {
+       padding-left: 90px;
+   }
+
+   .dropdown .btn,
+   .dropdown .btn:focus,
+   .dropdown .btn:active,
+   .dropdown .btn.show {
+       border: 0;
+       box-shadow: none;
+       outline: none;
+   }
+
+   .appoint-form-wrapper {
+       border-radius: 5px;
+       padding: 60px;
+   }
+
+   .customer-appoint {
+       background-color: #fff;
+       max-width: 840px;
+       width: 100%;
+   }
+
+   .bg-img {
+       background: url("image/form.webp") no-repeat center / cover;
+       width: 1170px;
+       height: 290px;
+       margin: 0 auto;
+       border-radius: 5px;
+   }
+
+   .appoint-form-wrapper h3 {
+       color: white;
+       padding-bottom: 20px;
+   }
+
+   .customer-name input {
+       width: 168px;
+       height: 100%;
+       padding: 5px 10px;
+       border: none;
+   }
+
+   .customer-phone input {
+       width: 168px;
+       height: 100%;
+       padding: 5px 10px;
+       border: none;
+   }
+
+   .customer-email input {
+       width: 251px;
+       height: 100%;
+       padding: 5px 10px;
+       border: none;
+   }
+
+   .customer-appoint .bdr-right {
+       border-right: 1px solid #e5e5e5;
+   }
+
+   .customer-appoint {
+       height: 70px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+   input:focus,
+   select:focus {
+       outline: none;
+       box-shadow: none;
+   }
+
+   .form-image form {
+       display: flex;
+       align-items: center;
+   }
+
+   .appoint-btn {
+       padding-left: 25px;
+   }
+
+   .btn-app {
+       height: 70px;
+       background-color: #F7941D;
+       color: #fff;
+       font-size: 16px;
+       font-weight: 500;
+       font-family: "Montserrat", sans-serif;
+       padding: 0 45px;
+       border-radius: 0;
+   }
+
+   .btn-app:hover {
+       background-color: #222222;
+       color: #fff;
+   }
+
+   /*appointment end*/
+   /*about us start*/
+   .section-padding {
+       padding: 110px 0;
+   }
+
+   .about-content p {
+       width: 550px;
+   }
+
+   .section-title {
+       margin-top: -12px;
+       margin-bottom: 30px;
+   }
+
+   .about-address a {
+       color: black;
+       text-decoration: none;
+   }
+
+   .about-address li.phone i,
+   .about-address li.mail i {
+       width: 42px;
+       height: 42px;
+       font-size: 18px;
+       line-height: 42px;
+       text-align: center;
+       color: #fff;
+       background-color: #F7941D;
+       border-radius: 50%;
+   }
+
+   .about-address li.mail i {
+       background-color: #152545;
+   }
+
+   .about-address li.phone a:hover,
+   .about-address li.mail a:hover {
+       color: #F7941D;
+       transition: 0.5s ease all;
+   }
+
+   /*about us end*/
+   /*pest start*/
+   .pest-control {
+       background-color: #f3f5f6;
+       height: 552px;
+   }
+
+   .pest-icon {
+       width: 110px;
+       height: 110px;
+       text-align: center;
+       line-height: 90px;
+       border: 10px solid #fff;
+       border-radius: 50%;
+       margin: 0 auto;
+       cursor: pointer;
+       transition: 0.4s;
+   }
+
+   .pest-item:hover .pest-icon {
+       border-color: #F7941D;
+   }
+
+   .section-title .title {
+       font-size: 48px;
+   }
+
+   .section-title .sub-title {
+       padding-top: 36px;
+       margin: 0 auto;
+       max-width: 45%;
+   }
+
+   .pest-item h6 a {
+       font-size: 16px;
+       color: #5f5f5f;
+       text-decoration: none;
+   }
+
+   .pest-title {
+       margin-top: 18px;
+   }
+
+   /*pest end*/
+   /*our service start*/
+   .carousel-item {
+       transition: transform 1.2s ease-in-out;
+   }
+
+   .service-item {
+       padding: 40px 25px;
+   }
+
+   .card-custom {
+       border: none;
+       box-shadow: 0px 0px 12px -2px rgba(1, 26, 72, 0.1);
+       ;
+   }
+
+   .card-custom:hover,
+   .card-custom a:hover {
+       background-color: #F7941D;
+       color: white;
+   }
+
+   .card-custom a {
+       transition: letter-spacing 0.4s ease, color 0.4s ease;
+   }
+
+   .card-custom a:hover {
+       color: white;
+       letter-spacing: 1px;
+   }
+
+   .service-item h4 {
+       padding-bottom: 15px;
+   }
+
+   .service-item a {
+       text-decoration: none;
+       color: #222222;
+   }
+
+   /*our service end*/
+   /*testimonial section start*/
+   .testimonial img {
+       padding: 0 0 0 20px;
+   }
+
+   .testimonial-content p {
+       color: #222222;
+       font-size: 20px;
+       font-weight: 300;
+       font-style: italic;
+       line-height: 1.5;
+       margin: 10px 0 30px;
+   }
+
+   .testimonial-content p {
+       color: #222222;
+       font-size: 20px;
+       font-weight: 300;
+       font-style: italic;
+       line-height: 1.5;
+       margin: 20px 0 30px;
+   }
+
+   /*testimonial section end*/
+   /*counter-up start*/
+   .counter {
+       height: 291px;
+       background: url("image/pattern.jpg") no-repeat center / cover;
+
+   }
+
+   .counter h2 {
+       color: #F7941D;
+       font-size: 50px;
+       font-weight: 700;
+   }
+
+   .counterup-item h4 {
+       font-size: 16px;
+       font-weight: 100;
+       padding-top: 5px;
+   }
+
+   /*counter-up end*/
+   /*blog start*/
+   .card {
+       width: 370px;
+       height: 432px;
+   }
+
+   .blog-content ul li {
+       list-style-type: none;
+       display: inline-flex;
+       color: #444444;
+       font-size: 14px;
+       display: inline-block;
+       margin-right: 20px;
+       padding-right: 20px;
+       position: relative;
+   }
+
+   .blog-title a {
+       font-size: 18px;
+       text-decoration: none;
+       color: #222222;
+   }
+
+   .blog-title a:hover {
+       color: #F7941D;
+       transition: 0.5s all;
+   }
+
+   .blog-group-btn a {
+       color: #222222;
+       text-decoration: none;
+       font-size: 14px;
+       font-weight: 600;
+       line-height: 1;
+       padding-top: 20px;
+   }
+
+   .blog-meta {
+       padding-left: 0;
+   }
+
+   .blog-group-btn a:hover,
+   .widget-social-link a:hover {
+       color: #F7941D;
+       transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .blog-meta li:first-child {
+       border-right: 0.5px solid #44444493;
+   }
+
+   /*blog end*/
+   /*footer start*/
+   .footer-widget {
+       background-color: #f3f5f6;
+       width: 100%;
+       max-width: 100%;
+       height: 409px;
+       background-color: #f3f5f6;
+   }
+
+   .footer-single-widget h5 {
+       font-size: 14px;
+       color: #222222;
+   }
+
+   .widget-body ul li {
+       list-style-type: none;
+   }
+
+   .widget-body ul li a {
+       font-size: 14px;
+       color: #222222;
+       text-decoration: none;
+   }
+
+   .widget-social-link a {
+       padding-top: 20px;
+       color: #222222;
+       font-size: 16px;
+       display: inline-block;
+       line-height: 1;
+       text-align: center;
+       margin-right: 15px;
+   }
+
+   .widget-search-form {
+       position: relative;
+   }
+
+   .newsletter-inner .news-field {
+       width: 100%;
+       height: 44px;
+       border: none;
+       line-height: 1;
+       color: #222222;
+       background-color: #e5e5e5;
+       position: relative;
+       padding: 5px 55px 5px 10px;
+   }
+
+   .newsletter-inner .news-btn:hover {
+       background-color: #222222;
+   }
+
+   .newsletter-inner .news-btn {
+       font-size: 18px;
+       height: 44px;
+       color: #fff;
+       line-height: 1;
+       font-weight: 400;
+       padding: 0 15px;
+       display: inline-block;
+       background-color: #F7941D;
+       border: none;
+       position: absolute;
+       right: 0;
+       top: 0;
+   }
+
+   .footer-bottom {
+       background-color: #dadada;
+       padding: 14px 0;
+   }
+
+   .copyright-text a {
+       text-decoration: none;
+       color: #F7941D;
+   }
+
+   /*footer end*/
+   /*mobile mode*/
+   @media (max-width: 576px) {
+       .navbar-collapse {
+           background-color: rgb(238, 238, 238);
+       }
+
+       .carousel-inner img {
+           width: 390px;
+           height: 350px;
+       }
+
+       .slide-title {
+           font-size: 25px;
+           white-space: nowrap;
+       }
+
+       .custom-caption {
+           right: auto !important;
+           left: -5% !important;
+           text-align: left;
+       }
+
+       .btn-hero {
+           padding: 10px 15px;
+       }
+
+       .form-image {
+           width: 360px;
+           height: 601px;
+       }
+
+       .appointment-form {
+           padding: 63px 0;
+       }
+
+       .bg-img {
+           width: 360px;
+           height: 601px;
+       }
+
+       .appoint-form-wrapper {
+           padding: 60px 15px;
+       }
+
+       .customer-appoint-box>div {
+           border-right: none;
+       }
+
+       .customer-name input {
+           width: 330px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .customer-phone input {
+           width: 330px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .customer-email input {
+           width: 330px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .service select {
+           width: 330px;
+           margin-bottom: 20px;
+       }
+
+       .appoint-form-inner .appoint-btn .btn-app {
+           display: block;
+           width: 100%;
+       }
+
+       .appoint-btn {
+           padding-left: 0;
+       }
+
+       .section-title .title {
+           font-size: 24px;
+       }
+
+       .about-us .about-text {
+           font-size: 16px;
+           /* desktop */
+       }
+
+       .about-address li i {
+           margin-right: 6px;
+       }
+
+       .about-thumb img {
+           width: 100%;
+           height: auto;
+           object-fit: cover;
+       }
+
+       .about-content p {
+           width: 400px;
+           text-align: center;
+       }
+
+       .section-padding {
+           padding: 63px 0;
+       }
+
+       .section-title .sub-title {
+           max-width: 90%;
+       }
+
+       .pest-control {
+           height: 800px;
+       }
+
+       .counter h2 {
+           font-size: 36px;
+           font-weight: 500;
+       }
+
+       .counter h4 {
+           font-size: 16px;
+       }
+
+       .carousel-inner img {
+           width: 370px;
+           height: 350px;
+       }
+
+       .newsletter-inner .news-field {
+           width: 70%;
+           align-items: center;
+       }
+
+       .footer-widget {
+           height: 750px;
+       }
+   }
+
+   @media (min-width: 768px) and (max-width: 991.98px) {
+       .navbar-collapse {
+           background-color: rgb(238, 238, 238);
+       }
+
+       .carousel-inner img {
+           height: 400px;
+       }
+
+       .slide-title {
+           font-size: 35px;
+       }
+
+       .about-content p {
+           width: 650px;
+       }
+
+       .pest-control {
+           height: 700px;
+       }
+
+       .bg-img {
+           width: 690px;
+           height: 603px;
+       }
+
+       .appoint-form-wrapper {
+           padding: 60px 15px;
+       }
+
+       .customer-appoint-box>div {
+           border-right: none;
+       }
+
+       .customer-name input {
+           width: 569px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .customer-phone input {
+           width: 569px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .customer-email input {
+           width: 569px;
+           height: 70px;
+           margin-bottom: 20px;
+       }
+
+       .service select {
+           width: 569px;
+           margin-bottom: 20px;
+       }
+
+       .section-title .title {
+           font-size: 24px;
+       }
+
+       .appoint-form-wrapper {
+           border-radius: 5px;
+           padding: 60px;
+       }
+
+       .customer-appoint-box {
+           width: fit-content;
+       }
+
+       .appoint-form-inner .appoint-btn .btn-app {
+           display: block;
+           width: 100%;
+       }
+
+       .appoint-btn {
+           padding-left: 0;
+       }
+
+       .footer-widget {
+           height: 450px;
+       }
+   }

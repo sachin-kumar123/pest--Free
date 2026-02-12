@@ -1,0 +1,362 @@
+  body {
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: "Open Sans", sans-serif;
+      position: relative;
+      background: #fff;
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.7;
+      font-weight: 400;
+  }
+
+  .row {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  /*top-bar start*/
+  .top-bar {
+      background-color: #011a48;
+      height: 57px;
+      display: flex;
+      align-items: center;
+  }
+
+  .header-top-left a {
+      font-size: 15px;
+      color: white;
+      text-decoration: none;
+      padding-left: 15px;
+  }
+
+  .header-top-left a:hover,
+  .header-social-link a i:hover {
+      color: #F7941D;
+      transition: 0.5s ease all;
+  }
+
+  .header-top-left i {
+      color: white;
+  }
+
+  .header-social-link a i {
+      color: white;
+      margin-left: 22px;
+  }
+
+  /*top-bar end*/
+  /*navbar start*/
+  .nav-wrap {
+      top: 0;
+      left: 0;
+      position: sticky;
+      width: 100%;
+      z-index: 9;
+      background-color: #fff;
+      height: 80px;
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+      animation: slideDown 0.3s ease;
+  }
+
+  .nav-item {
+      margin-left: 22px;
+  }
+
+  .navbar-collapse ul li a {
+      color: #222222;
+      font-size: 13px;
+      font-weight: 500;
+      display: block;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  .navbar-collapse ul li a i {
+      font-size: 15px;
+      padding-left: 5px;
+  }
+
+  .no-caret::after {
+      display: none !important;
+  }
+
+  .nav-item .active {
+      color: #F7941D !important;
+  }
+
+  .dropdown-menu {
+      border: none !important;
+  }
+
+  /*navbar end*/
+  /*breadcrum start*/
+  .coords {
+      background-color: #011a48;
+      padding: 95px 0 100px;
+      text-align: center;
+  }
+
+  .coords h2 {
+      color: #fff;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 500;
+  }
+
+  .breadcrumb li a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: capitalize;
+      text-decoration: none;
+  }
+
+  /*breadcrum end*/
+  /*about us start*/
+  .section-padding {
+      padding: 110px 0;
+  }
+
+  .section-title .title {
+      font-size: 48px;
+      position: relative;
+  }
+
+  .section-title .sub-title {
+      padding-top: 36px;
+      margin: 0 auto;
+      max-width: 55%;
+  }
+
+  .about1-info h6 {
+      color: #F7941D;
+      margin-bottom: 18px;
+  }
+
+  .about1-info p {
+      color: #555555;
+      font-weight: 500;
+      margin-bottom: 0;
+  }
+
+  /*about us end*/
+  /*banner start*/
+  .banner-img img {
+      width: 634px;
+      height: 396px;
+  }
+
+  /*banne end*/
+  /*counter-up start*/
+  .counter {
+      height: 291px;
+      background: url("image/pattern.jpg") no-repeat center / cover;
+
+  }
+
+  .counter h2 {
+      color: #F7941D;
+      font-size: 50px;
+      font-weight: 700;
+  }
+
+  .counterup-item h4 {
+      font-size: 16px;
+      font-weight: 100;
+      padding-top: 5px;
+  }
+
+  /*counter-up end*/
+  /*our team start*/
+  .team-area .container {
+      width: 1200px;
+  }
+
+  .team-member .team-content {
+      text-align: center;
+  }
+
+  .team-content {
+      padding-top: 20px;
+  }
+
+  .team-content .member-name {
+      font-weight: 500;
+      color: #222222;
+  }
+
+  .team-content .designation {
+      color: #555555;
+      display: block;
+      line-height: 1;
+      padding-top: 10px;
+  }
+
+  /*our team end*/
+  /*testimonial section start*/
+  .testimonial-bg {
+      background-color: #f3f5f6;
+  }
+
+  .testimonial img {
+      padding: 0 0 0 20px;
+  }
+
+  .testimonial-content p {
+      color: #222222;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.5;
+      margin: 10px 0 30px;
+  }
+
+  .testimonial-content p {
+      color: #222222;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.5;
+      margin: 20px 0 30px;
+  }
+
+  /*testimonial section end*/
+  /*choose us start*/
+  .choose-text .title {
+      padding: 32px 0 24px;
+  }
+
+  .choose-text {
+      color: #222222;
+  }
+
+  /*choose us end*/
+  /*footer start*/
+  .footer-widget {
+      background-color: #f3f5f6;
+      width: 100%;
+      max-width: 100%;
+      height: 409px;
+      background-color: #f3f5f6;
+  }
+
+  .footer-single-widget h5 {
+      font-size: 14px;
+      color: #222222;
+  }
+
+  .widget-body ul li {
+      list-style-type: none;
+  }
+
+  .widget-body ul li a {
+      font-size: 14px;
+      color: #222222;
+      text-decoration: none;
+  }
+
+  .widget-social-link a {
+      padding-top: 20px;
+      color: #222222;
+      font-size: 16px;
+      display: inline-block;
+      line-height: 1;
+      text-align: center;
+      margin-right: 15px;
+  }
+
+  .newsletter-inner .news-field {
+      width: 100%;
+      height: 44px;
+      border: none;
+      line-height: 1;
+      color: #222222;
+      background-color: #e5e5e5;
+      position: relative;
+      padding: 5px 55px 5px 10px;
+  }
+
+  .newsletter-inner .news-btn:hover {
+      background-color: #222222;
+  }
+
+  .newsletter-inner .news-btn {
+      font-size: 18px;
+      height: 44px;
+      color: #fff;
+      line-height: 1;
+      font-weight: 400;
+      padding: 0 15px;
+      display: inline-block;
+      background-color: #F7941D;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .widget-search-form {
+      position: relative;
+  }
+
+  .footer-bottom {
+      background-color: #dadada;
+      padding: 14px 0;
+  }
+
+  .copyright-text a {
+      text-decoration: none;
+      color: #F7941D;
+  }
+
+  /*footer end*/
+  @media (max-width: 576px) {
+      .coords {
+          padding: 35px 0;
+      }
+
+      .section-title .sub-title {
+          max-width: 100%;
+      }
+
+      .section-padding {
+          padding: 63px 0;
+      }
+
+      .section-title .title {
+          font-size: 24px;
+      }
+
+      .banner-img img {
+          width: 480px;
+          height: 243px;
+      }
+
+      .counter {
+          height: 550px;
+      }
+
+      .team-area .container {
+          width: 390px;
+      }
+
+      .footer-widget {
+          height: 750px;
+      }
+
+      .navbar-collapse {
+          background-color: rgb(238, 238, 238);
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+      .banner-img img {
+          width: 280px;
+          height: 170px;
+      }
+
+      .footer-widget {
+          height: 460px;
+      }
+  }

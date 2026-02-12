@@ -1,0 +1,435 @@
+ @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@1,300;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ body {
+     overflow-x: hidden;
+     font-family: "Montserrat", sans-serif;
+     position: relative;
+     background: #fff;
+     font-size: 16px;
+     color: #555555;
+     line-height: 1.7;
+     font-weight: 400;
+ }
+
+ /*top-bar start*/
+ .top-bar {
+     background-color: #011a48;
+     height: 57px;
+     display: flex;
+     align-items: center;
+ }
+
+ .header-top-left a {
+     font-size: 15px;
+     color: white;
+     text-decoration: none;
+     padding-left: 15px;
+ }
+
+ .header-top-left a:hover,
+ .header-social-link a i:hover {
+     color: #F7941D;
+     transition: 0.5s ease all;
+ }
+
+ .header-top-left i {
+     color: white;
+ }
+
+ .header-social-link a i {
+     color: white;
+     margin-left: 22px;
+ }
+
+ /*top-bar end*/
+ /*navbar start*/
+ .nav-wrap {
+     top: 0;
+     left: 0;
+     position: sticky;
+     width: 100%;
+     z-index: 9;
+     background-color: #fff;
+     height: 80px;
+     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+     animation: slideDown 0.3s ease;
+ }
+
+ .nav-item {
+     margin-left: 22px;
+ }
+
+ .navbar-collapse ul li a {
+     color: #222222;
+     font-size: 13px;
+     font-weight: 500;
+     display: block;
+     text-transform: uppercase;
+     font-family: "Montserrat", sans-serif;
+ }
+
+ .navbar-collapse ul li a i {
+     font-size: 15px;
+     padding-left: 5px;
+ }
+
+ .no-caret::after {
+     display: none !important;
+ }
+
+ .nav-item .active {
+     color: #F7941D !important;
+ }
+
+ .dropdown-menu {
+     border: none !important;
+ }
+
+ /*navbar end*/
+ /*breadcrum start*/
+ .coords {
+     background-color: #011a48;
+     padding: 95px 0 100px;
+     text-align: center;
+ }
+
+ .coords h2 {
+     color: #fff;
+     font-size: 30px;
+     line-height: 1;
+     font-weight: 500;
+ }
+
+ .breadcrumb li a {
+     color: #fff;
+     font-size: 14px;
+     font-weight: 400;
+     text-transform: capitalize;
+     text-decoration: none;
+ }
+
+ /*breadcrum end*/
+ /*blog start*/
+ .blog-widget-wrapper .card {
+     width: 320px;
+ }
+
+ .blog-icon a {
+     color: #555555;
+     font-size: 16px;
+     margin-right: 15px;
+ }
+
+ .blog-icon a:hover {
+     color: #F7941D;
+     transition: 0.5s ease all;
+ }
+
+ .widget-search-form {
+     position: relative;
+ }
+
+ .widget-search-form .search-field {
+     width: 100%;
+     border: none;
+     height: 46px;
+     line-height: 1;
+     font-size: 14px;
+     padding: 0 15px;
+     padding-right: 55px;
+     background-color: #f6f6f6;
+ }
+
+ .widget-search-form .search-btn {
+     width: 46px;
+     height: 46px;
+     background-color: #F7941D;
+     color: #fff;
+     font-size: 18px;
+     line-height: 46px;
+     text-align: center;
+     border: none;
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+
+ .recent-posts-image img {
+     width: 80px;
+ }
+
+ .recent-posts {
+     display: flex;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
+ .recent-posts-body {
+     padding-left: 10px;
+ }
+
+ .recent-posts-meta {
+     display: block;
+     font-size: 14px;
+     line-height: 1;
+     padding-bottom: 10px;
+ }
+
+ .recent-posts-title a {
+     color: #222222;
+     text-decoration: none;
+ }
+
+ .recent-posts-title a:hover {
+     color: #F7941D;
+     transition: 0.5s all;
+ }
+
+ .custom-card {
+     width: 420px;
+     height: 463px;
+     margin-bottom: 30px;
+ }
+
+ .blog-meta li {
+     list-style-type: none;
+     color: #444444;
+     font-size: 14px;
+     display: inline-block;
+     margin-right: 20px;
+     padding-right: 20px;
+     position: relative;
+ }
+
+ .blog-meta li:first-child {
+     border-right: 1px solid rgba(68, 68, 68, 0.5);
+ }
+
+ .blog-categories li {
+     font-size: 16px;
+     line-height: 1;
+     margin-bottom: 20px;
+     font-weight: 500;
+ }
+
+ .blog-categories li a {
+     color: #222222;
+     text-decoration: none;
+ }
+
+ .blog-categories li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .blog-categories li:hover a {
+     color: #F7941D;
+     transition: 0.5s all;
+ }
+
+ .blog-categories li:hover span {
+     color: #F7941D;
+     transition: 0.5s all;
+ }
+
+ .blog-tag a {
+     color: #222222;
+     font-size: 14px;
+     border: 1px solid #e5e5e5;
+     line-height: 1;
+     padding: 8px 15px;
+     display: inline-block;
+     margin-bottom: 5px;
+     text-decoration: none;
+ }
+
+ .blog-tag a:hover {
+     background-color: #F7941D;
+     border-color: #F7941D;
+     color: white;
+     transition: 0.5s ease;
+ }
+
+ .blog-content .blog-title a {
+     color: #222222;
+     text-decoration: none;
+ }
+
+ .custom-card h5 a {
+     color: #222222;
+     text-decoration: none;
+     text-align: right;
+ }
+
+ .custom-card h5 a:hover {
+     color: #F7941D;
+     transition: 0.5s all;
+ }
+
+ .custom-card h5 {
+     line-height: 1.5;
+     font-size: 18px;
+ }
+
+ .blog-group-btn {
+     margin-top: 30px;
+ }
+
+ .blog-group-btn a {
+     color: #222222;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 1;
+     font-family: 16px;
+     text-decoration: none;
+ }
+
+ .blog-group-btn a:hover {
+     color: #F7941D;
+     transition: 0.5s ease;
+ }
+
+ /*blog end*/
+ /*footer start*/
+ .footer-widget {
+     background-color: #f3f5f6;
+     width: 100%;
+     max-width: 100%;
+     height: 409px;
+     background-color: #f3f5f6;
+ }
+
+ .widget-search-form .search-field {
+     width: 100%;
+     border: none;
+     height: 46px;
+     line-height: 1;
+     font-size: 14px;
+     padding: 0 15px;
+     padding-right: 55px;
+     background-color: #f6f6f6;
+ }
+
+ .footer-single-widget h5 {
+     font-size: 14px;
+     color: #222222;
+ }
+
+ .widget-body ul li {
+     list-style-type: none;
+ }
+
+ .widget-body ul li a {
+     font-size: 14px;
+     color: #222222;
+     text-decoration: none;
+ }
+
+ .widget-social-link a {
+     padding-top: 20px;
+     color: #222222;
+     font-size: 16px;
+     display: inline-block;
+     line-height: 1;
+     text-align: center;
+     margin-right: 15px;
+ }
+
+ .newsletter-inner .news-field {
+     width: 100%;
+     height: 44px;
+     border: none;
+     line-height: 1;
+     color: #222222;
+     background-color: #e5e5e5;
+     position: relative;
+     padding: 5px 55px 5px 10px;
+ }
+
+ .newsletter-inner .news-btn:hover {
+     background-color: #222222;
+ }
+
+ .newsletter-inner .news-btn {
+     font-size: 18px;
+     height: 44px;
+     color: #fff;
+     line-height: 1;
+     font-weight: 400;
+     padding: 0 15px;
+     display: inline-block;
+     background-color: #F7941D;
+     border: none;
+ }
+
+ .footer-bottom {
+     background-color: #dadada;
+     padding: 14px 0;
+ }
+
+ .copyright-text a {
+     text-decoration: none;
+     color: #F7941D;
+ }
+
+ .section-padding {
+     padding: 110px 0;
+ }
+
+ /*footer end*/
+ /*our-serices end*/
+ @media (max-width: 576px) {
+     .navbar-collapse {
+         background-color: rgb(238, 238, 238);
+     }
+
+     .carousel-inner img {
+         width: 390px;
+         height: 350px;
+     }
+
+     .slide-title {
+         font-size: 25px;
+         white-space: nowrap;
+     }
+
+     .blog-widget-wrapper .card {
+         width: 350px;
+     }
+
+     .custom-card {
+         width: 350px;
+         height: 425px;
+     }
+
+     .custom-caption {
+         right: auto !important;
+         left: -5% !important;
+         text-align: left;
+     }
+
+     .btn-hero {
+         padding: 10px 15px;
+     }
+
+     .custom-card {
+         width: 360px;
+         height: 455px;
+     }
+
+     .footer-widget {
+         height: 750px;
+     }
+
+     .footer-widget {
+         height: 750px;
+     }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+     .custom-card {
+         width: 330px;
+         height: 433px;
+     }
+ }
